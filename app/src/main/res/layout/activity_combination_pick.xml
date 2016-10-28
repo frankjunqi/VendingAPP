@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_top" android:layout_width="wrap_content" android:layout_height="80.0dip">
+        <include android:id="@id/top" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_alignParentTop="true" layout="@layout/top_layout" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_number" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_below="@id/layout_top">
+        <TextView android:textSize="25.0sp" android:id="@id/tv_number_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="@string/sku_number_title" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/imageView1" android:layout_width="270.0dip" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" android:src="@drawable/yuanjiao_btn_white" android:layout_toRightOf="@id/tv_number_title" android:layout_centerVertical="true" />
+        <EditText android:textSize="20.0sp" android:id="@id/et_number" android:background="@null" android:focusable="false" android:layout_width="200.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:hint="@string/placeholder_combination_number" android:singleLine="true" android:maxLength="8" android:numeric="integer" android:editable="false" android:layout_alignLeft="@id/imageView1" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/listView" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="10.0dip" android:listSelector="@color/head_bg" android:layout_above="@id/layout_Bottom" android:layout_below="@id/layout_number" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/layout_Bottom" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="130.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="25.0sp" android:id="@id/alert_msg_title" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="10.0dip" android:text="@string/PUBLIC_MSG_TITLE" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textSize="25.0sp" android:id="@id/alert_msg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="40.0dip" android:maxLines="5" android:layout_toRightOf="@id/alert_msg_title" android:layout_alignBaseline="@id/alert_msg_title" />
+    </RelativeLayout>
+</RelativeLayout>

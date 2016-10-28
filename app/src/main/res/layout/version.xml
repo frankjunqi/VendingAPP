@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="320.0dip" android:layout_height="480.0dip" android:layout_centerInParent="true">
+        <ImageView android:id="@id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120.0dip" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/logo" android:layout_centerHorizontal="true">
+            <TextView android:textSize="30.0px" android:textStyle="bold" android:textColor="#ff666666" android:gravity="center" android:id="@id/vermsg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ProgressBar android:id="@id/progress" android:layout_width="280.0dip" android:layout_height="10.0dip" android:layout_marginTop="25.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/progress_barcolor" style="?android:attr/progressBarStyleHorizontal" />
+            <TextView android:textSize="30.0px" android:textStyle="bold" android:textColor="#ff666666" android:id="@id/progressNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0% 0KB/0KB" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

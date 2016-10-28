@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="25.0sp" android:gravity="center" android:id="@id/channle_number" android:layout_width="100.0dip" android:layout_height="fill_parent" android:maxLines="2" android:layout_alignParentLeft="true" />
+    <LinearLayout android:orientation="vertical" android:background="@color/head_bg" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_toRightOf="@id/channle_number" />
+    <TextView android:textSize="25.0sp" android:gravity="center_vertical" android:id="@id/sku_name" android:layout_width="340.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:maxLines="2" android:layout_toRightOf="@id/channle_number" />
+    <LinearLayout android:orientation="vertical" android:background="@color/head_bg" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_toRightOf="@id/sku_name" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/sku_name">
+        <Button android:id="@id/btn_sub" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:text="-" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="subClicked" />
+        <ImageView android:layout_width="58.0dip" android:layout_height="46.0dip" android:src="@drawable/yuanjiao_btn_white" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <EditText android:enabled="false" android:gravity="center" android:id="@id/replenishment_number" android:background="@null" android:layout_width="50.0dip" android:layout_height="40.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <Button android:id="@id/btn_sum" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="10.0dip" android:text="+" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="sumClicked" />
+    </RelativeLayout>
+</RelativeLayout>

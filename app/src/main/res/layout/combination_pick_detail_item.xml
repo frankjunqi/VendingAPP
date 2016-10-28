@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="25.0sp" android:gravity="center_vertical" android:id="@id/sku_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:maxLines="2" android:layout_alignParentLeft="true" />
+    <LinearLayout android:orientation="vertical" android:background="@color/head_bg" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_alignLeft="@id/sku_number" />
+    <TextView android:textSize="25.0sp" android:gravity="center" android:id="@id/sku_number" android:layout_width="120.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+</RelativeLayout>
